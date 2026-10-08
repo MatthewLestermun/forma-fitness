@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <title>FORMA — фитнес-студия</title>
+  <meta name="description" content="Фитнес-студия FORMA: силовые, функциональные тренировки и растяжка с тренером. Первая тренировка бесплатно.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== Шапка ===================== -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#top" class="logo" data-scroll>
+        <span class="logo-mark"></span>FORMA
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#programs" data-scroll>Программы</a>
+        <a href="#schedule" data-scroll>Расписание</a>
+        <a href="#coaches" data-scroll>Тренеры</a>
+        <a href="#pricing" data-scroll>Цены</a>
+        <a href="#faq" data-scroll>Вопросы</a>
+        <button class="btn btn-white nav-cta" type="button" data-book>Записаться</button>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:+70000000000" class="btn btn-dark btn-sm hide-mobile">+7 (000) 000-00-00</a>
+        <button class="btn btn-white btn-sm hide-mobile" type="button" data-book>Записаться</button>
+        <button class="burger" id="burger" type="button" aria-label="Меню"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===================== Первый экран ===================== -->
+    <section class="hero">
+      <div class="hero-photo" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-main">
+          <a href="#pricing" class="badge reveal" data-scroll>
+            <span class="badge-dot"></span>Первая тренировка бесплатно <span class="badge-arrow">→</span>
+          </a>
+          <h1 class="hero-title reveal">Тело,<br>которое работает</h1>
+          <p class="hero-sub reveal">Тренировки с системой. <span class="dim">Без хаоса, без «начну с понедельника» и без скучных абонементов.</span></p>
+          <div class="hero-buttons reveal">
+            <button class="btn btn-white btn-lg" type="button" data-book>Записаться на пробную</button>
+            <a href="#programs" class="btn btn-dark btn-lg" data-scroll>Смотреть программы</a>
+          </div>
+        </div>
+
+        <ul class="hero-list reveal">
+          <li>Для новичков</li>
+          <li>Для тех, кто застрял на плато</li>
+          <li>Первые результаты через 8 недель</li>
+        </ul>
+      </div>
+
+      <!-- Полоса с цифрами, как полоса логотипов у Vercel -->
+      <div class="container">
+        <div class="stats">
+          <div class="stat"><b data-count="1200" data-suffix="+">0</b><span>клиентов</span></div>
+          <div class="stat"><b data-count="4.9" data-decimals="1">0</b><span>★ на Яндекс Картах</span></div>
+          <div class="stat"><b data-count="12">0</b><span>тренеров</span></div>
+          <div class="stat"><b data-count="800" data-suffix=" м²">0</b><span>зал</span></div>
+          <div class="stat"><b>7–23</b><span>каждый день</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Подход ===================== -->
+    <section class="section">
+      <div class="container split">
+        <h2 class="statement reveal">Мы не продаём абонементы. <span class="dim">Мы ведём к результату — от первой тренировки до цели, с планом и контролем.</span></h2>
+        <div class="features reveal">
+          <p class="mono-label">Как это работает</p>
+          <ul class="feature-list">
+            <li><span class="num">01</span>Диагностика и замеры на первой встрече</li>
+            <li><span class="num">02</span>Личный план тренировок и питания</li>
+            <li><span class="num">03</span>Тренер в Telegram между занятиями</li>
+            <li><span class="num">04</span>Контрольные замеры каждые 4 недели</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Программы ===================== -->
+    <section class="section" id="programs">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="mono-label">Программы</p>
+          <h2 class="section-title">Выбери свой формат. <span class="dim">Сменить можно в любой момент.</span></h2>
+        </div>
+
+        <div class="programs">
+          <article class="program reveal" data-book="Сила">
+            <div class="program-img"><img src="img/strength.jpg" alt="Силовая зона со штангами" loading="lazy"></div>
+            <div class="program-body">
+              <p class="mono-label">01 / Сила</p>
+              <h3>Силовые тренировки</h3>
+              <p class="dim">Штанга, гантели, правильная техника. Рост силы и рельефа.</p>
+              <span class="program-link">Записаться →</span>
+            </div>
+          </article>
+
+          <article class="program reveal" data-book="Функционал">
+            <div class="program-img"><img src="img/functional.jpg" alt="Девушка с канатами в зале" loading="lazy"></div>
+            <div class="program-body">
+              <p class="mono-label">02 / Функционал</p>
+              <h3>Функциональный тренинг</h3>
+              <p class="dim">Выносливость, жиросжигание и энергия на весь день.</p>
+              <span class="program-link">Записаться →</span>
+            </div>
+          </article>
+
+          <article class="program reveal" data-book="Растяжка">
+            <div class="program-img"><img src="img/yoga.jpg" alt="Растяжка с тренером" loading="lazy"></div>
+            <div class="program-body">
+              <p class="mono-label">03 / Растяжка</p>
+              <h3>Растяжка и мобильность</h3>
+              <p class="dim">Гибкость, здоровая спина и восстановление после нагрузок.</p>
+              <span class="program-link">Записаться →</span>
+            </div>
+          </article>
+
+          <article class="program reveal" data-book="Персональные">
+            <div class="program-img"><img src="img/personal.jpg" alt="Персональная тренировка" loading="lazy"></div>
+            <div class="program-body">
+              <p class="mono-label">04 / Персонально</p>
+              <h3>Персональный тренер</h3>
+              <p class="dim">Один на один. Максимум внимания и самый быстрый результат.</p>
+              <span class="program-link">Записаться →</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Расписание ===================== -->
+    <section class="section" id="schedule">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="mono-label">Расписание</p>
+          <h2 class="section-title">Групповые занятия. <span class="dim">Выбери день — запишись в один клик.</span></h2>
+        </div>
+
+        <div class="days reveal" id="days" role="tablist"></div>
+        <div class="schedule reveal" id="schedule-list"></div>
+      </div>
+    </section>
+
+    <!-- ===================== Зал ===================== -->
+    <section class="space">
+      <img src="img/space.jpg" alt="Тренажёрный зал студии" loading="lazy">
+      <div class="space-overlay">
+        <div class="container">
+          <p class="mono-label">Пространство</p>
+          <h2 class="statement reveal">800 м² зала. <span class="dim">Новое оборудование, душевые, полотенца и вода — включены.</span></h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Тренеры ===================== -->
+    <section class="section" id="coaches">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="mono-label">Тренеры</p>
+          <h2 class="section-title">Люди, которые доведут. <span class="dim">Опыт от 5 лет и профильное образование.</span></h2>
+        </div>
+
+        <div class="coaches">
+          <article class="coach reveal">
+            <div class="coach-img"><img src="img/coach-1.jpg" alt="Тренер Артём" loading="lazy"></div>
+            <div class="coach-info">
+              <h3>Артём Волков</h3>
+              <p class="dim">Сила · Функционал</p>
+              <p class="mono-label">Опыт 8 лет</p>
+            </div>
+            <button class="coach-btn" type="button" data-book="Персональные" aria-label="Записаться к Артёму">→</button>
+          </article>
+
+          <article class="coach reveal">
+            <div class="coach-img"><img src="img/coach-2.jpg" alt="Тренер Алина" loading="lazy"></div>
+            <div class="coach-info">
+              <h3>Алина Смирнова</h3>
+              <p class="dim">Растяжка · Мобильность</p>
+              <p class="mono-label">Опыт 6 лет</p>
+            </div>
+            <button class="coach-btn" type="button" data-book="Растяжка" aria-label="Записаться к Алине">→</button>
+          </article>
+
+          <article class="coach reveal">
+            <div class="coach-img"><img src="img/coach-3.jpg" alt="Тренер Марк" loading="lazy"></div>
+            <div class="coach-info">
+              <h3>Марк Орлов</h3>
+              <p class="dim">Сила · Подтягивания с нуля</p>
+              <p class="mono-label">Опыт 10 лет</p>
+            </div>
+            <button class="coach-btn" type="button" data-book="Сила" aria-label="Записаться к Марку">→</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Цены ===================== -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="mono-label">Цены</p>
+          <h2 class="section-title">Честные тарифы. <span class="dim">Без скрытых платежей.</span></h2>
+
+          <div class="toggle" id="price-toggle">
+            <button type="button" class="active" data-period="month">Месяц</button>
+            <button type="button" data-period="year">Год <span class="save">−20%</span></button>
+          </div>
+        </div>
+
+        <div class="plans">
+          <article class="plan reveal">
+            <p class="mono-label">Старт</p>
+            <p class="price"><b data-month="3 900" data-year="3 120">3 900</b> ₽<span class="dim">/мес</span></p>
+            <p class="dim plan-desc">Чтобы начать и войти в ритм</p>
+            <ul class="plan-list">
+              <li>8 групповых занятий</li>
+              <li>Диагностика и замеры</li>
+              <li>Доступ в зал 7:00–16:00</li>
+            </ul>
+            <button class="btn btn-dark btn-block" type="button" data-book="Тариф «Старт»">Выбрать</button>
+          </article>
+
+          <article class="plan plan-hot reveal">
+            <p class="plan-tag">Популярный</p>
+            <p class="mono-label">Форма</p>
+            <p class="price"><b data-month="6 900" data-year="5 520">6 900</b> ₽<span class="dim">/мес</span></p>
+            <p class="dim plan-desc">Оптимально для результата</p>
+            <ul class="plan-list">
+              <li>Безлимит групповых занятий</li>
+              <li>План тренировок и питания</li>
+              <li>Тренер в Telegram</li>
+              <li>Доступ в зал весь день</li>
+            </ul>
+            <button class="btn btn-white btn-block" type="button" data-book="Тариф «Форма»">Выбрать</button>
+          </article>
+
+          <article class="plan reveal">
+            <p class="mono-label">Персонально</p>
+            <p class="price"><b data-month="14 900" data-year="11 920">14 900</b> ₽<span class="dim">/мес</span></p>
+            <p class="dim plan-desc">Максимальный темп</p>
+            <ul class="plan-list">
+              <li>8 персональных тренировок</li>
+              <li>Всё из тарифа «Форма»</li>
+              <li>Замеры каждые 2 недели</li>
+            </ul>
+            <button class="btn btn-dark btn-block" type="button" data-book="Тариф «Персонально»">Выбрать</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Отзывы ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="mono-label">Отзывы</p>
+          <h2 class="section-title">Результаты говорят. <span class="dim">Мы просто помогаем.</span></h2>
+        </div>
+
+        <div class="reviews">
+          <figure class="review reveal">
+            <blockquote>«За 3 месяца −9 кг. Впервые не бросил через две недели — тренер просто не дал.»</blockquote>
+            <figcaption><b>Денис, 29</b><span class="mono-label">Тариф «Форма»</span></figcaption>
+          </figure>
+          <figure class="review reveal">
+            <blockquote>«Прошли боли в спине, которые были годами. Растяжка у Алины — лучшее, что я для себя сделала.»</blockquote>
+            <figcaption><b>Ольга, 41</b><span class="mono-label">Растяжка</span></figcaption>
+          </figure>
+          <figure class="review reveal">
+            <blockquote>«Подтянулся первый раз в жизни в 34 года. Марк, спасибо!»</blockquote>
+            <figcaption><b>Игорь, 34</b><span class="mono-label">Персонально</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Вопросы ===================== -->
+    <section class="section" id="faq">
+      <div class="container faq-wrap">
+        <div class="section-head reveal">
+          <p class="mono-label">Вопросы</p>
+          <h2 class="section-title">Частые вопросы.</h2>
+        </div>
+
+        <div class="faq reveal">
+          <details>
+            <summary>Я никогда не занимался. Мне можно?</summary>
+            <p>Да, большинство наших клиентов начинали с нуля. На первой встрече тренер проведёт диагностику и подберёт нагрузку под твой уровень.</p>
+          </details>
+          <details>
+            <summary>Что взять на пробную тренировку?</summary>
+            <p>Спортивную форму и кроссовки. Полотенце, вода и шкафчик — у нас.</p>
+          </details>
+          <details>
+            <summary>Можно заморозить абонемент?</summary>
+            <p>Да, до 14 дней в месяц на тарифах «Форма» и «Персонально» — например, на отпуск или болезнь.</p>
+          </details>
+          <details>
+            <summary>Есть ли парковка?</summary>
+            <p>Да, бесплатная парковка для клиентов прямо у входа.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Финальный призыв ===================== -->
+    <section class="cta">
+      <div class="container cta-inner reveal">
+        <h2 class="cta-title">Первая тренировка — <span class="accent-text">бесплатно.</span></h2>
+        <p class="dim">Приходи, познакомься с тренером и залом. Без обязательств.</p>
+        <div class="hero-buttons center">
+          <button class="btn btn-white btn-lg" type="button" data-book>Записаться</button>
+          <a href="tel:+70000000000" class="btn btn-dark btn-lg">Позвонить</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== Подвал ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a href="#top" class="logo" data-scroll><span class="logo-mark"></span>FORMA</a>
+        <p class="dim footer-text">Фитнес-студия с тренером.<br>ул. Примерная, 1 · каждый день 7:00–23:00</p>
+      </div>
+      <div class="footer-links">
+        <a href="#programs" data-scroll>Программы</a>
+        <a href="#schedule" data-scroll>Расписание</a>
+        <a href="#pricing" data-scroll>Цены</a>
+        <a href="tel:+70000000000">+7 (000) 000-00-00</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span class="mono-label">© FORMA · концепт сайта by Matthew Lestermun</span>
+      <span class="mono-label">Фото: Unsplash</span>
+    </div>
+  </footer>
+
+  <!-- ===================== Окно записи ===================== -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" type="button" data-close aria-label="Закрыть">×</button>
+
+      <form id="book-form">
+        <p class="mono-label">Запись</p>
+        <h2 id="modal-title">Бесплатная пробная тренировка</h2>
+        <label class="field">Имя
+          <input class="input" name="name" placeholder="Как к вам обращаться" required>
+        </label>
+        <label class="field">Телефон
+          <input class="input" name="phone" type="tel" placeholder="+7 900 000-00-00" required>
+        </label>
+        <label class="field">Что интересно
+          <select class="input" name="program" id="program-select">
+            <option>Сила</option>
+            <option>Функционал</option>
+            <option>Растяжка</option>
+            <option>Персональные</option>
+            <option>Тариф «Старт»</option>
+            <option>Тариф «Форма»</option>
+            <option>Тариф «Персонально»</option>
+          </select>
+        </label>
+        <button class="btn btn-white btn-block btn-lg" type="submit">Отправить заявку</button>
+        <p class="mono-label modal-note">Демо-версия: заявка никуда не отправляется</p>
+      </form>
+
+      <div class="done" id="book-done">
+        <div class="done-icon">✓</div>
+        <h2>Заявка принята</h2>
+        <p class="dim">Администратор перезвонит в течение 15 минут и подберёт удобное время.</p>
+        <button class="btn btn-white btn-block" type="button" data-close>Отлично</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
